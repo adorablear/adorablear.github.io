@@ -1,0 +1,122 @@
+.wrap {
+  position: relative;
+  width: 100%;
+}
+.wrap .top-btn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: #5B5EA6;
+  cursor: pointer;
+}
+.wrap .top-btn i {
+  display: block;
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #DDDEED;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9B9DC9;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/*Animation*/
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+.bounce {
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-16px);
+    -ms-transform: translateY(-16px);
+    transform: translateY(-16px);
+  }
+  60% {
+    -webkit-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.bounce2 {
+  animation: bounce2 1.5s infinite ease-in-out;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .wrap .menu-ico {
+    top: 4%;
+    right: 5%;
+  }
+  .wrap .close-ico {
+    top: 4%;
+    right: 5%;
+  }
+  .menu .menu-box .info img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+  .menu .menu-box .info strong {
+    font-size: 1.5em;
+  }
+  .menu .menu-box .info p > a {
+    font-size: 1em;
+  }
+  .menu .menu-box .list > ul > li > a {
+    font-size: 2.7em;
+  }
+}
+/* Mobile Small*/
+@media screen and (max-width: 500px) {
+  .menu .menu-box {
+    justify-content: flex-end;
+  }
+  .menu .menu-box .info {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */
